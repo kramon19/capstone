@@ -1,0 +1,138 @@
+html, body {
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif;
+    color: rgb(74, 74, 74);
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    /*padding: 2rem 1.5rem;*/
+}
+
+/* Fonts */
+h1 {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+
+h2, h3 {
+    font-size: 2rem;
+}
+
+
+
+p {
+    font-size: 1.15rem;
+}
+
+/* Header */
+
+header {
+    height: 4rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+/* Logo div */
+
+.logo {
+    display: flex;
+}
+
+/* Navigation */
+li {
+    display: inline-block;
+}
+
+.nav {
+    padding-right: 1rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Learn something new everyday */
+
+#first_container {
+    background-color: rgb(216, 216, 216);
+    display: flex;
+}
+
+.image {
+    width: 60%;
+    padding: 2rem 1.5rem;
+    border-right: 1px solid rgb(216, 216, 216);
+}
+
+.image img {
+    width: 100%;
+}
+
+.learn_box {
+    width: 40%;
+    align-self: center;
+    margin-left: 1.5rem;
+}
+
+.learn_text {
+    width: 60%;
+    margin-left: 1.5rem;
+}
+
+button {
+    width: 90%;
+    padding: 0.5rem 0;
+    background-color: 	rgb(74, 74, 74);
+    color: white;
+    font-size: 1.15rem;
+}
+
+/* It doesn't hurt to keep practicing */
+
+#second_container {
+    display: flex;
+}
+
+.info {
+    width: 40%;
+}
+
+.little_pic {
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding-left: 1rem;
+    border: 1px solid rgb(216, 216, 216);
+    
+}
+
+.little_pic img {
+    flex-basis: 35%;
+    padding: 1rem;
+}
+
+#guest_lecture {
+    background-color: rgb(216, 216, 216);
+}
+
+.info_text {
+     display: flex;
+     flex-direction: column;
+     align-self: center;
+}
+
+.info_text h3 {
+    font-size: 1.5rem;
+}
+
+#birdeye {
+    margin-top: 2rem;
+    padding-top: 0;
+}
