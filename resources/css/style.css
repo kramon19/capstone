@@ -8,24 +8,61 @@ html, body {
 .container {
     width: 100%;
     height: auto;
-    /*padding: 2rem 1.5rem;*/
 }
 
 /* Fonts */
+
 h1 {
     text-transform: uppercase;
+}
+h1, h3, h4 {
     font-size: 1.5rem;
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 2.45rem;
+    /*line-height: 3rem;*/
+}
+
+h3 {
+    margin-top: -1.1rem;
+}
+
+#thesis_title {
+    text-align: center;
+}
+
+.learn_text p {
+    line-height: 1.75rem;
+    margin-top: -1.25rem;
+}
+
+.logo span {
+    color: rgb(199, 197, 197);
+    font-weight: 400;
+}
+
+p {
+    font-size: 1.25rem;
+    margin-top: -1.1rem;
+}
+
+.white p {
+    color: rgb(126, 123, 123);
     font-weight: lighter;
 }
 
-h2, h3 {
-    font-size: 2rem;
+.info_text p, .thesis_text p, footer p  {
+    font-size: 1rem;
 }
 
+.info_text span {
+    color: rgb(97, 196, 240);
+}
 
-
-p {
-    font-size: 1.15rem;
+#now_then {
+    margin-top: -1.2rem;
 }
 
 /* Header */
@@ -36,18 +73,21 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
 }
 
 /* Logo div */
 
 .logo {
     display: flex;
+    margin-left: 1.5rem;
+    align-items: center;
 }
 
 /* Navigation */
 li {
     display: inline-block;
+    margin-right: 1.5rem;
+    font-size: 1.25rem;
 }
 
 .nav {
@@ -56,7 +96,9 @@ li {
 
 a {
     text-decoration: none;
+    color: rgb(74, 74, 74);
 }
+
 
 /* Learn something new everyday */
 
@@ -82,12 +124,12 @@ a {
 }
 
 .learn_text {
-    width: 60%;
+    width: 70%;
     margin-left: 1.5rem;
 }
 
 button {
-    width: 90%;
+    width: 98%;
     padding: 0.5rem 0;
     background-color: 	rgb(74, 74, 74);
     color: white;
@@ -96,43 +138,139 @@ button {
 
 /* It doesn't hurt to keep practicing */
 
-#second_container {
+#second_container, #wrapper {
     display: flex;
+    background-color: rgb(243, 245, 245);
 }
 
 .info {
     width: 40%;
+    padding-top: 2rem;
 }
 
-.little_pic {
+.little_pic, .thesis_pic {
     width: 100%;
     height: auto;
     display: flex;
-    padding-left: 1rem;
+    align-items: center;
     border: 1px solid rgb(216, 216, 216);
-    
 }
 
-.little_pic img {
-    flex-basis: 35%;
+.info_text, .thesis_text {
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.little_pic img, .thesis_pic img {
+    width: 35%;
     padding: 1rem;
 }
 
-#guest_lecture {
+#guest_lecture, #thesis_con {
     background-color: rgb(216, 216, 216);
 }
 
-.info_text {
-     display: flex;
-     flex-direction: column;
-     align-self: center;
-}
-
-.info_text h3 {
-    font-size: 1.5rem;
+#first_pic {
+    border-top: none;
 }
 
 #birdeye {
-    margin-top: 2rem;
-    padding-top: 0;
+    padding-top: 0rem;
+}
+
+/* Start Learning */
+#third_container {
+    background-color: rgb(234, 235, 236);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: left;
+}
+
+.course_container {
+    width: 25%;
+    background-color: white;
+    height: 390px;
+    margin: 0.80rem;
+    
+}
+
+.course_container img {
+    width: 100%;
+    height: auto;
+}
+
+.white {
+    width: 80%;
+    padding: 0 1rem;
+}
+
+.courses {
+    padding-bottom: 0.5rem;
+}
+
+/* Thesis Exhibit */
+
+#fourth_container {
+    width: 100%;
+    height: auto;
+    background-color: rgb(243, 245, 245);
+    padding-top: 2rem;
+    border-bottom: 1px solid rgb(216, 216, 216);
+}
+
+.wrapper {
+    width: 100%; 
+}
+
+.video {
+    width: 60%;
+    height: auto;
+    /*padding: 0 1.5rem 1.5rem 1.5rem;*/
+    padding: 0 1.5rem 1.5rem 1.5rem;   
+}
+
+video {
+    width: 100%;
+    height: auto; 
+}
+
+.thesis {
+    width: 40%;
+}
+
+.thesis_pic {
+    /*display: flex;
+    width: 100%;*/  
+    border: none;  
+}
+
+.thesis_pic img {
+    padding: 1rem;    
+}
+
+footer {
+    display: flex;
+    position: relative;
+    top: 2em;
+    padding: 0 1.5rem 1.5rem 2rem;
+    justify-content: space-between;
+}
+
+.terms {
+    display: flex;
+    justify-content: space-between;
+    width: 8%;
+}
+
+/* Mobile */
+
+@media only screen and (max-width: 480px) {
+    
 }
